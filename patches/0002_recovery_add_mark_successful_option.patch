@@ -2,7 +2,7 @@ diff --git a/install/Android.bp b/install/Android.bp
 index bed3bc5..2a31fff 100644
 --- a/install/Android.bp
 +++ b/install/Android.bp
-@@ -20,6 +20,7 @@ cc_defaults {
+@@ -30,6 +30,7 @@ cc_defaults {
      ],
  
      shared_libs: [
@@ -10,10 +10,10 @@ index bed3bc5..2a31fff 100644
          "libbase",
          "libbootloader_message",
          "libcrypto",
-@@ -64,6 +65,7 @@ cc_library_static {
-         "verifier.cpp",
+@@ -114,6 +115,7 @@ cc_library_static {
          "wipe_data.cpp",
          "wipe_device.cpp",
+         "spl_check.cpp",
 +        "mark_slot_successful.cpp",
      ],
  

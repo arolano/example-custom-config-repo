@@ -1,6 +1,6 @@
---- a/cpio/mkbootfs.c
-+++ b/cpio/mkbootfs.c
-@@ -179,9 +179,13 @@
+--- a/mkbootfs/mkbootfs.c
++++ b/mkbootfs/mkbootfs.c
+@@ -180,9 +180,13 @@
      }
  
      while((de = readdir(d)) != 0){

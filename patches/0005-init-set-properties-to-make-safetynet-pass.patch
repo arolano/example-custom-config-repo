@@ -1,4 +1,4 @@
-From fa18a5862798cbe06ce7ff476b9d66d8686eba16 Mon Sep 17 00:00:00 2001
+From 3102e9e8cc836089cea9df5145fea6e22e646691 Mon Sep 17 00:00:00 2001
 From: Danny Lin <danny@kdrag0n.dev>
 Date: Wed, 7 Oct 2020 00:24:54 -0700
 Subject: [PATCH] init: Set properties to make SafetyNet pass
@@ -19,11 +19,11 @@ Change-Id: I66d23fd91d82906b00d5eb020668f01ae83ec31f
  1 file changed, 13 insertions(+)
 
 diff --git a/init/property_service.cpp b/init/property_service.cpp
-index a89504e59fc..5f805631d34 100644
+index 2d67bf5d772..4805a7b9fad 100644
 --- a/init/property_service.cpp
 +++ b/init/property_service.cpp
-@@ -1058,6 +1058,13 @@ static void ProcessKernelCmdline() {
-     }
+@@ -1247,6 +1247,13 @@ static void ProcessBootconfig() {
+     });
  }
  
 +static void SetSafetyNetProps() {
@@ -36,7 +36,7 @@ index a89504e59fc..5f805631d34 100644
  void PropertyInit() {
      selinux_callback cb;
      cb.func_audit = PropertyAuditCallback;
-@@ -1072,6 +1079,12 @@ void PropertyInit() {
+@@ -1261,6 +1268,12 @@ void PropertyInit() {
          LOG(FATAL) << "Failed to load serialized property info file";
      }
  

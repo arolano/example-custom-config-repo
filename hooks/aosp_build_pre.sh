@@ -27,7 +27,7 @@ patch_bitgapps(){
   git lfs pull
 
   echo -ne "\\nTARGET_ARCH := arm64" >> "${AOSP_BUILD_DIR}/device/google/${DEVICE_FAMILY}/device.mk"
-  echo -ne "\\nTARGET_SDK_VERSION := 30" >> "${AOSP_BUILD_DIR}/device/google/${DEVICE_FAMILY}/device.mk"
+  echo -ne "\\nTARGET_SDK_VERSION := 31" >> "${AOSP_BUILD_DIR}/device/google/${DEVICE_FAMILY}/device.mk"
   echo -ne "\\n\$(call inherit-product, vendor/gapps/gapps.mk)" >> "${AOSP_BUILD_DIR}/device/google/${DEVICE_FAMILY}/device.mk"
 }
 

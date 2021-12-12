@@ -1,4 +1,5 @@
 This is an example custom config repo that does the following:
+* on 12-12-21 MicroG was re-enabled which is the whole point of this fork
 * adds Seedvault
   * remote and project added in `local_manifests/custom.xml`
   * product_packages added in `vendor/config/main.mk`

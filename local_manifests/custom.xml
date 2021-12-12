@@ -6,7 +6,7 @@
   <!-- this custom repo - do not change path -->
   <project path="vendor/custom" name="example-custom-config-repo" remote="personal-remote" />
 
-  <!-- microg repo from rattlesnakeos -->
+  <!-- microg repo from rattlesnakeos - RE-ADDED 12-12-21 -->
   <project path="platform/prebuilts/microg" name="microg" remote="rattlesnakeos" clone-depth="1" />
 
   <!-- seedvault pinned to a specific revision -->

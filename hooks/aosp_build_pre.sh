@@ -37,7 +37,7 @@ patch_safetynet(){
   patch -p1 --no-backup-if-mismatch < "${CUSTOM_DIR}/patches/0005-init-set-properties-to-make-safetynet-pass.patch"
 }
 
-# apply microg sigspoof patch
+# apply microg sigspoof patch RE-ADDED 12-12-21
 echo "applying microg sigspoof patch"
 patch -p1 --no-backup-if-mismatch < "platform/prebuilts/microg/00002-microg-sigspoof.patch"
 

@@ -7,7 +7,7 @@
   <project path="vendor/custom" name="example-custom-config-repo" remote="personal-remote" />
 
   <!-- microg repo from rattlesnakeos READDING in 12 too -->
-  <project path="platform/prebuilts/microg" name="microg" remote="rattlesnakeos" clone-depth="1" 
+  <project path="platform/prebuilts/microg" name="microg" remote="rattlesnakeos" clone-depth="1" />
 
   <!-- seedvault pinned to a specific revision -->
   <project path="external/seedvault" name="seedvault" remote="seedvault-app" />
